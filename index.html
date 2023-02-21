@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Prefabricated Vertical Drains calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Thanks for checking it out!  -->
+
+<div id="PVD-calculator" class="wrapper">
+  <div class="calculator">
+    <div class="choose-value">
+    <!-- <div class="segmented-control"><input id="calc-value-With Smear Effect" type="radio" name="value" value="With Smear Effect" checked=""><label for="calc-value-With Smear Effect">With Smear Effect</label></div> -->
+      <!-- <div class="segmented-control">
+    <input id="calc-value-Without Smear Effect" type="radio" name="value" value="Without Smear Effect"><label for="calc-value-Without Smear Effect">Without Smear Effect</label></div> -->
+    </div>
+    <label for="calc-Cz" id="calc-Cz_value">Cz: 25</label>
+    <input id="calc-Cz" type="range" value="25" min="13" max="100">
+    <label for="calc-Cr" id="calc-Cr_value">Cr: 180cm</label>
+    <input id="calc-Cr" type="range" value="180" min="80" max="250">
+    <label for="calc-depth" id="calc-depth_value">Depth: 80m</label>
+    <input id="calc-depth" type="range" value="80" min="40" max="200">
+    <label for="calc-Loading" id="calc-Loading_value">Loading: 2 hours per week</label>
+    <input id="calc-Loading" type="range" value="2" min="0" max="50">
+    <label for="calc-Settlement" id="calc-Settlement_value">Settlement: 1 hour per week</label>
+    <input id="calc-Settlement" type="range" value="1" min="0" max="50">
+
+
+    <label for="calc-Settlementt" id="calc-Settlementt_value">Time after which construction is to be started(in days): 1 day</label>
+    <input id="calc-Settlementt" type="range" value="1" min="0" max="50">
+    <label for="calc-Settlementtt" id="calc-Settlementtt_value">Area of Construction  (in m²) : 1 m²</label>
+    <input id="calc-Settlementtt" type="range" value="1" min="0" max="50">
+
+    <!-- <label for="calc-Time after which construction is to be started(in days)" id="calc-days">Time after which construction is to be started(in days) : 1</label>
+    <input id="calc-days" type="range" value="180" min="80" max="250"> -->
+    <!-- <label for="calc-Area of Construction  (in m²)" id="calc-Area of Construction  (in m²)_value">Area of Construction  (in m²) : 1</label>
+    <input id="calc-Area of Construction  (in m²)" type="range" value="2" min="0" max="50"> -->
+  </div>
+  <div class="results">
+    <div id="calc-target-gain">
+      Spacing of PVD:<br>
+      <span>2700 calories</span>
+    </div>
+    <div id="calc-target-maintain">
+      Diameter of PVDs:<br>
+      <span>2400 calories</span>
+    </div>
+    <div id="calc-target-lose">
+      Number of PVD points:<br>
+      <span>1900 calories</span>
+    </div>
+    <div id="calc-target-lose">
+      Length of total PVDs required:<br>
+      <span>1900 calories</span>
+    </div>
+    <div id="test">
+      test
+      <span>7845</span>
+    </div>
+  </div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
