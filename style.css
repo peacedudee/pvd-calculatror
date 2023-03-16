@@ -134,7 +134,6 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0 0 8px 1px var(--secondary-color),
     0 0 16px 4px var(--background-color);
   border: 3px solid #fff;
-  Cr: 24px;
   width: 24px;
   border-radius: 50%;
   background: var(--secondary-color);

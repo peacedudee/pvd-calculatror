@@ -53,8 +53,8 @@ $(".calculator input").on("input change", function (event) {
   var targetMaintain = Math.round((PVD) / 100) * 100;
   var targetLosedepth = Math.round((PVD-500) / 100) * 100;
   // var test=54;
-  $("#calc-target-gain span").html(targetGaindepth + " calories");
-  $("#calc-target-maintain span").html(targetMaintain + " calories");
-  $("#calc-target-lose span").html(targetLosedepth + " calories");
-  $("#test span").html(area + " calories");
+  $("#calc-target-gain span").html(targetGaindepth + "  ");
+  $("#calc-target-maintain span").html(targetMaintain + "  ");
+  $("#calc-target-lose span").html(targetLosedepth + "  ");
+  $("#test span").html(area + "  ");
 });
