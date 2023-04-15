@@ -33,15 +33,17 @@ $(".calculator input").on("input change", function (event) {
     //   break;
   }
   
-  var Cr = parseInt($("#calc-Cr").val(), 10);
-  var Cz = parseInt($("#calc-Cz").val(), 10);
+  var cr = parseInt($("#calc-Cr").val(), 10);
+  var cz = parseInt($("#calc-Cz").val(), 10);
   var depth = parseInt($("#calc-depth").val(), 10);
-  var Loading = parseInt($("#calc-Loading").val(), 10);
-  var Settlement = parseInt($("#calc-Settlement").val(), 10);
-  var time_for_construction = parseInt($("#calc-Settlementt").val(), 10);
+  var loading = parseInt($("#calc-Loading").val(), 10);
+  var settlement = parseInt($("#calc-Settlement").val(), 10);
+  var tfc = parseInt($("#calc-Settlementt").val(), 10);
   var area= parseInt($("#calc-Settlementtt").val(), 10);
   var value = $(".calculator input[name='value']:checked").val();
   
+  let tv=(cz*tfc)/(depth*depth);
+  let 
   // The Harris–Benedict equations revised by Mifflin and St Jeor in 1990: 'A new predictive equation for resting energy expenditure in healthy individuals'
   var PVD = parseInt(10 * depth + 6.25 * Cr - 5 * Cz, 10) + (value === "With Smear Effect" ? 5 : -161);
   PVD = PVD * 1.2;
